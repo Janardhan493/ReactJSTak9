@@ -1,0 +1,172 @@
+/* Base Layout Configurations */
+.app-container {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0 1rem;
+}
+
+/* Common Card Rules */
+.component-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Light Mode System Colors */
+.light {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+.light .component-card {
+  background-color: #ffffff;
+}
+.light input, .light select {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+}
+.light .component-3 {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+}
+
+/* Dark Mode System Colors */
+.dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+.dark .component-card {
+  background-color: #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.dark input, .dark select {
+  background-color: #334155;
+  border: 1px solid #475569;
+  color: #f1f5f9;
+}
+.dark .component-3 {
+  background-color: #1e293b;
+  border: 2px dashed #475569;
+}
+
+/* Header Context Configurations */
+.component-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.theme-status {
+  margin: 5px 0 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.theme-toggle-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  opacity: 0.9;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.15;
+  margin: 1.5rem 0;
+}
+
+/* Form Layout Configurations */
+.registration-form {
+  margin-top: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input, .form-group select {
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #2563eb;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #059669;
+}
+
+/* Live Mirror Data Previews */
+.mirror-desc {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 1.2rem;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
